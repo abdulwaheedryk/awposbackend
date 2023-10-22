@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the menu container */
+  .navmain {
+    background-color: #333;
+    color: #fff;
+    
+    
+  }
+  
+  /* Style the main menu items */
+  .navmain ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navmain li {
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .navmain a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style sub-menus */
+  .navmain ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .navmain ul li:hover ul {
+    display: block;
+  }
+  
+  .navmain ul ul li {
+    padding: 0px 0;
+  }
+  
+  .navmain ul ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Styling for the hovered menu items */
+  .navmain li:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Styling for the last menu item (Log Off) */
+  .navmain li:last-child:hover {
+     /* Change the color as needed */
+    border-radius: 0 4px 4px 0;
+  }
+  .navmain {
+
+    background-color: #333;
+    color: #fff;
+    
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    position: relative;
+    display: flex; /* Added to make it a flex container */
+    justify-content: center; /* Added to center items horizontally */
+  }
+  
+  .navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+  
+  .navbar li {
+    height: auto;
+    width: 100.8px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #444444;
+  }
+  
+  .navbar a {
+    padding: 18px 0;
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .navbar li:hover,
+  a:hover {
+    background-color: #444444;
+  }
+  
+  .navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li:hover ul {
+    display: block;
+  }
+  
+  .navbar li ul li {
+    background-color: #444444;
+  }
+  
+  .navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+  }
+  
+  .navbar li ul li a:hover {
+    background-color: #a3a1a1;
+  }
